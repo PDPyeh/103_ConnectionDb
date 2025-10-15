@@ -7,8 +7,9 @@ const PORT = 3000;
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',         // ubah sesuai MySQL kamu
-  password: '',         // ubah kalau pakai password
+  user: 'root',
+  port: 3309,         
+  password: 'Meraklangka1',         
   database: 'mahasiswa'
 });
 
