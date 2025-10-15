@@ -32,15 +32,15 @@ function render(rows){
   list.innerHTML = rows.map(r => card(r)).join('');
 }
 
-function card({ id, nama, nim, kelas }){
+function card({ id, nama, alamat, agama }){
   return `
   <article class="card">
     <div class="body">
       <span class="badge">ID: <code>${id}</code></span>
       <div class="title">${escapeHtml(nama || '-')}</div>
       <div class="meta">
-        <div><span class="label">NIM</span> <code>${escapeHtml(nim || '-')}</code></div>
-        <div><span class="label">Kelas</span> ${escapeHtml(kelas || '-')}</div>
+        <div><span class="label">alamat</span> <code>${escapeHtml(alamat || '-')}</code></div>
+        <div><span class="label">agama</span> ${escapeHtml(agama || '-')}</div>
       </div>
     </div>
   </article>`;
